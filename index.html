@@ -11,26 +11,28 @@
   <!-- Header -->
   <nav>
     <h1>🌱 EcoFinds</h1>
-    <button onclick="showPage('login')">Login</button>
-    <button onclick="showPage('dashboard')">Dashboard</button>
-    <button onclick="showPage('marketplace')">Marketplace</button>
-    <button onclick="showPage('cart')">Cart</button>
-    <button onclick="showPage('purchases')">Previous Purchases</button>
-    <button onclick="logout()">Logout</button>
+    <div>
+      <button onclick="showPage('login')">Login</button>
+      <button onclick="showPage('dashboard')">Dashboard</button>
+      <button onclick="showPage('marketplace')">Marketplace</button>
+      <button onclick="showPage('cart')">Cart</button>
+      <button onclick="showPage('purchases')">Purchases</button>
+      <button onclick="logout()">Logout</button>
+    </div>
   </nav>
 
   <!-- Login / Signup -->
   <section id="login" class="page">
     <h2>Login / Sign Up</h2>
     <form onsubmit="login(); return false;">
-      <input type="text" id="email" placeholder="Email" required><br><br>
-      <input type="password" id="password" placeholder="Password" required><br><br>
+      <input type="text" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
       <button type="submit">Login / Register</button>
     </form>
     <h3 id="status"></h3>
   </section>
 
-  <!-- User Dashboard -->
+  <!-- Dashboard -->
   <section id="dashboard" class="page" style="display:none">
     <h2>User Dashboard</h2>
     <input type="text" id="username" placeholder="Enter username">
@@ -43,7 +45,7 @@
     <h2>Marketplace</h2>
     <input type="text" id="search" placeholder="Search..." onkeyup="searchItems()">
     <select id="filter" onchange="filterItems()">
-      <option value="all">All Categories</option>
+      <option value="all">All</option>
       <option value="Electronics">Electronics</option>
       <option value="Furniture">Furniture</option>
       <option value="Books">Books</option>
@@ -56,11 +58,11 @@
   <!-- Add Product -->
   <section id="addProduct" class="page" style="display:none">
     <h2>Add New Product</h2>
-    <input type="text" id="pTitle" placeholder="Title"><br><br>
-    <input type="text" id="pCategory" placeholder="Category"><br><br>
-    <input type="number" id="pPrice" placeholder="Price"><br><br>
-    <textarea id="pDesc" placeholder="Description"></textarea><br><br>
-    <input type="file" id="pImage" accept="image/*"><br><br>
+    <input type="text" id="pTitle" placeholder="Title"><br>
+    <input type="text" id="pCategory" placeholder="Category"><br>
+    <input type="number" id="pPrice" placeholder="Price"><br>
+    <textarea id="pDesc" placeholder="Description"></textarea><br>
+    <input type="file" id="pImage" accept="image/*"><br>
     <button onclick="addProduct()">Submit Listing</button>
   </section>
 
@@ -80,4 +82,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
