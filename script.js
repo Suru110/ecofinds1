@@ -14,7 +14,7 @@ let defaultProducts = [
     category: "Furniture",
     price: 1200,
     desc: "Strong and durable wooden chair.",
-    image: "https://images.unsplash.com/photo-1582582494700-8c5c7a8a7c5e?auto=format&fit=crop&w=600&q=60"
+    image: "https://images.unsplash.com/photo-1616627562245-749f49fba7fa?auto=format&fit=crop&w=600&q=60"
   },
   {
     title: "Book Bundle",
@@ -28,7 +28,7 @@ let defaultProducts = [
     category: "Sports",
     price: 3500,
     desc: "Second-hand bicycle in excellent condition.",
-    image: "https://images.unsplash.com/photo-1529429617124-95b109e86baf?auto=format&fit=crop&w=600&q=60"
+    image: "https://images.unsplash.com/photo-1622373048889-9a7b1eaeedce?auto=format&fit=crop&w=600&q=60"
   }
 ];
 
